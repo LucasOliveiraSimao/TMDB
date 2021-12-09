@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.repository
+package com.lucassimao.tmdb.repository.datasourceImpl
 
 import com.lucassimao.tmdb.api.TMDBService
 import com.lucassimao.tmdb.model.MovieList
