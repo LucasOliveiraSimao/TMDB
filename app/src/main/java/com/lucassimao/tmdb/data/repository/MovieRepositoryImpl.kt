@@ -1,6 +1,6 @@
 package com.lucassimao.tmdb.data.repository
 
-import com.lucassimao.tmdb.MovieRepository
+import com.lucassimao.tmdb.domain.MovieRepository
 import com.lucassimao.tmdb.data.model.Movie
 import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource
 import com.lucassimao.tmdb.data.repository.datasource.MovieDBDatasource
@@ -10,7 +10,7 @@ class MovieRepositoryImpl(
     private val movieRemoteDatasource: MovieRemoteDatasource,
     private val movieDBDatasource: MovieDBDatasource,
     private val movieCacheDatasource: MovieCacheDatasource
-) : MovieRepository{
+) : MovieRepository {
     override suspend fun getMovies(): List<Movie> {
         TODO("Not yet implemented")
     }

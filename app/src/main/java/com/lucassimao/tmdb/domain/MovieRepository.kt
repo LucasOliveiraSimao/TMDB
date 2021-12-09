@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.domain
 
 import com.lucassimao.tmdb.data.model.Movie
 
