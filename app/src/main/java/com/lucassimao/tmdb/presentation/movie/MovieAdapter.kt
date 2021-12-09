@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.movie
+package com.lucassimao.tmdb.presentation.movie
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

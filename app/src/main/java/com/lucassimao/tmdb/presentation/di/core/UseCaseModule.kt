@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di.core
+package com.lucassimao.tmdb.presentation.di.core
 
 import com.lucassimao.tmdb.domain.MovieRepository
 import com.lucassimao.tmdb.domain.usecase.GetMoviesUseCase

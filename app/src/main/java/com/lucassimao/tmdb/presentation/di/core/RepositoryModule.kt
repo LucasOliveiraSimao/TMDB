@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di.core
+package com.lucassimao.tmdb.presentation.di.core
 
 import com.lucassimao.tmdb.data.repository.MovieRepositoryImpl
 import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource

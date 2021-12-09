@@ -1,8 +1,8 @@
-package com.lucassimao.tmdb.di.movie
+package com.lucassimao.tmdb.presentation.di.movie
 
 import com.lucassimao.tmdb.domain.usecase.GetMoviesUseCase
 import com.lucassimao.tmdb.domain.usecase.UpdateMoviesUseCase
-import com.lucassimao.tmdb.movie.MovieViewModelFactory
+import com.lucassimao.tmdb.presentation.movie.MovieViewModelFactory
 import dagger.Module
 import dagger.Provides
 

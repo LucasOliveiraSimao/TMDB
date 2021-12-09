@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di.core
+package com.lucassimao.tmdb.presentation.di.core
 
 import android.content.Context
 import androidx.room.Room

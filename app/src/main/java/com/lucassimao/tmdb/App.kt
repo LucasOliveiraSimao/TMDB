@@ -1,12 +1,12 @@
 package com.lucassimao.tmdb
 
 import android.app.Application
-import com.lucassimao.tmdb.di.Injector
-import com.lucassimao.tmdb.di.core.AppComponent
-import com.lucassimao.tmdb.di.core.AppModule
-import com.lucassimao.tmdb.di.core.NetModule
-import com.lucassimao.tmdb.di.core.RemoteDataModule
-import com.lucassimao.tmdb.di.movie.MovieSubComponent
+import com.lucassimao.tmdb.presentation.di.Injector
+import com.lucassimao.tmdb.presentation.di.core.AppComponent
+import com.lucassimao.tmdb.presentation.di.core.AppModule
+import com.lucassimao.tmdb.presentation.di.core.NetModule
+import com.lucassimao.tmdb.presentation.di.core.RemoteDataModule
+import com.lucassimao.tmdb.presentation.di.movie.MovieSubComponent
 
 class App : Application(), Injector {
     private lateinit var appComponent: AppComponent
