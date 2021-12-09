@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di
+package com.lucassimao.tmdb.di.core
 
 import android.content.Context
 import com.lucassimao.tmdb.di.movie.MovieSubComponent
