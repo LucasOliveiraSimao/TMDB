@@ -1,10 +1,11 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.movie
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.lucassimao.tmdb.R
 import com.lucassimao.tmdb.data.model.Movie
 import com.lucassimao.tmdb.databinding.ListItemBinding
 

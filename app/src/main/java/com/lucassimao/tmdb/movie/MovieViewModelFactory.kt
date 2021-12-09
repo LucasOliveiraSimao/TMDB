@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.movie
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
