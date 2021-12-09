@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.db
 
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
