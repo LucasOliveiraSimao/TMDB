@@ -8,7 +8,7 @@ import com.lucassimao.tmdb.repository.datasource.MovieRemoteDatasource
 
 class MovieRepositoryImpl(
     private val movieRemoteDatasource: MovieRemoteDatasource,
-    private val movieLocalDatasource: MovieDBDatasource,
+    private val movieDBDatasource: MovieDBDatasource,
     private val movieCacheDatasource: MovieCacheDatasource
 ) : MovieRepository{
     override suspend fun getMovies(): List<Movie> {
@@ -29,6 +29,22 @@ class MovieRepositoryImpl(
             }
         } catch (e: Exception) {
 
+        }
+        return movieList
+    }
+
+    private suspend fun getMoviesFromDB(): List<Movie> {
+        lateinit var movieList: List<Movie>
+        try {
+            movieList = movieDBDatasource.getMoviesFromDB()
+        } catch (e: Exception) {
+
+        }
+        if (movieList.isNotEmpty()) {
+            return movieList
+        } else {
+            movieList = getMoviesFromAPI()
+            movieDBDatasource.saveMoviesToDB(movieList)
         }
         return movieList
     }
