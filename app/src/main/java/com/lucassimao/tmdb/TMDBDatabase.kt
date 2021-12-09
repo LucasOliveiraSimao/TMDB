@@ -9,6 +9,6 @@ import com.lucassimao.tmdb.model.Movie
     version = 1,
     exportSchema = false
 )
-abstract class TMDBDatabase:RoomDatabase() {
-
+abstract class TMDBDatabase : RoomDatabase() {
+    abstract fun movieDao(): MovieDAO
 }
