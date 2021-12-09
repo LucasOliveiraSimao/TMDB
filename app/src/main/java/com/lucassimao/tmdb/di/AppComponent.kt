@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.di
 
 import dagger.Component
 import javax.inject.Singleton

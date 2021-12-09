@@ -1,5 +1,6 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.di
 
+import com.lucassimao.tmdb.HomeActivity
 import dagger.Subcomponent
 
 @MovieScope
