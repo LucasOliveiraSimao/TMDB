@@ -1,8 +1,8 @@
-package com.lucassimao.tmdb.repository.datasourceImpl
+package com.lucassimao.tmdb.data.repository.datasourceImpl
 
-import com.lucassimao.tmdb.db.MovieDAO
-import com.lucassimao.tmdb.model.Movie
-import com.lucassimao.tmdb.repository.datasource.MovieDBDatasource
+import com.lucassimao.tmdb.data.db.MovieDAO
+import com.lucassimao.tmdb.data.model.Movie
+import com.lucassimao.tmdb.data.repository.datasource.MovieDBDatasource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,7 +1,7 @@
-package com.lucassimao.tmdb.repository.datasourceImpl
+package com.lucassimao.tmdb.data.repository.datasourceImpl
 
-import com.lucassimao.tmdb.model.Movie
-import com.lucassimao.tmdb.repository.datasource.MovieCacheDatasource
+import com.lucassimao.tmdb.data.model.Movie
+import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource
 
 class MovieCacheDatasourceImpl : MovieCacheDatasource {
     private var movieList = ArrayList<Movie>()

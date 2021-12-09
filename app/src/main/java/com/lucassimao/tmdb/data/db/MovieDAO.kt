@@ -1,9 +1,9 @@
-package com.lucassimao.tmdb.db
+package com.lucassimao.tmdb.data.db
 
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.lucassimao.tmdb.model.Movie
+import com.lucassimao.tmdb.data.model.Movie
 
 interface MovieDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)

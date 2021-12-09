@@ -1,10 +1,10 @@
-package com.lucassimao.tmdb.repository
+package com.lucassimao.tmdb.data.repository
 
 import com.lucassimao.tmdb.MovieRepository
-import com.lucassimao.tmdb.model.Movie
-import com.lucassimao.tmdb.repository.datasource.MovieCacheDatasource
-import com.lucassimao.tmdb.repository.datasource.MovieDBDatasource
-import com.lucassimao.tmdb.repository.datasource.MovieRemoteDatasource
+import com.lucassimao.tmdb.data.model.Movie
+import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource
+import com.lucassimao.tmdb.data.repository.datasource.MovieDBDatasource
+import com.lucassimao.tmdb.data.repository.datasource.MovieRemoteDatasource
 
 class MovieRepositoryImpl(
     private val movieRemoteDatasource: MovieRemoteDatasource,

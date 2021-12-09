@@ -1,6 +1,6 @@
-package com.lucassimao.tmdb.repository.datasource
+package com.lucassimao.tmdb.data.repository.datasource
 
-import com.lucassimao.tmdb.model.MovieList
+import com.lucassimao.tmdb.data.model.MovieList
 import retrofit2.Response
 
 interface MovieRemoteDatasource {

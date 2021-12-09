@@ -1,6 +1,6 @@
 package com.lucassimao.tmdb
 
-import com.lucassimao.tmdb.model.Movie
+import com.lucassimao.tmdb.data.model.Movie
 
 interface MovieRepository {
     suspend fun getMovies(): List<Movie>

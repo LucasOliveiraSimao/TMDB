@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.model
+package com.lucassimao.tmdb.data.model
 
 import androidx.room.Entity
 import com.google.gson.annotations.SerializedName

@@ -1,8 +1,8 @@
-package com.lucassimao.tmdb.db
+package com.lucassimao.tmdb.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.lucassimao.tmdb.model.Movie
+import com.lucassimao.tmdb.data.model.Movie
 
 @Database(
     entities = [Movie::class],
