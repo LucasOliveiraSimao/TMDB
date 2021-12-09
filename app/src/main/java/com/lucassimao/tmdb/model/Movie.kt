@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.model
 
 import com.google.gson.annotations.SerializedName
 
