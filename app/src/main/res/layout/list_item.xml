@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#303F9F"
+        android:elevation="20dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"
+                tools:targetApi="o"
+                tools:text="Homem Aranha 3: Sem Volta pra Casa" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                tools:src="@drawable/poster_spiderman" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/description_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"
+                tools:targetApi="o"
+                tools:text="O Homem-Aranha precisa lidar com as consequências da sua verdadeira identidade ter sido descoberta" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
