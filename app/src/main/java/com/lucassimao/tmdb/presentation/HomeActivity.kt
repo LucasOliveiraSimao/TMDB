@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.lucassimao.tmdb.R
+import com.lucassimao.tmdb.databinding.ActivityHomeBinding
 import com.lucassimao.tmdb.presentation.di.Injector
 import com.lucassimao.tmdb.presentation.movie.MovieAdapter
 import com.lucassimao.tmdb.presentation.movie.MovieViewModel
@@ -21,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var movieViewModel: MovieViewModel
     private lateinit var adapter: MovieAdapter
 
-    private lateinit var binding: ActivityMovieBinding
+    private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -39,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
         adapter = MovieAdapter()
-        binding.recyclerViewPopularMovies.adapter = adapter
+        binding.recyclerView.adapter = adapter
 
         displayPopularMovies()
     }
@@ -52,9 +53,9 @@ class HomeActivity : AppCompatActivity() {
             if (it != null) {
                 adapter.setList(it)
                 adapter.notifyDataSetChanged()
-                binding.progressMovie.visibility = View.GONE
+                binding.progressBar.visibility = View.GONE
             } else {
-                binding.progressMovie.visibility = View.GONE
+                binding.progressBar.visibility = View.GONE
                 Toast.makeText(applicationContext, "Dados Não Disponíveis", Toast.LENGTH_SHORT)
                     .show()
             }
