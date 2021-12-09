@@ -5,9 +5,11 @@ import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource
 import com.lucassimao.tmdb.data.repository.datasource.MovieDBDatasource
 import com.lucassimao.tmdb.data.repository.datasource.MovieRemoteDatasource
 import com.lucassimao.tmdb.domain.MovieRepository
+import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
+@Module
 class RepositoryModule {
     @Provides
     @Singleton
