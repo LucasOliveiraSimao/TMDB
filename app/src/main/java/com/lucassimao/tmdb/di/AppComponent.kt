@@ -1,5 +1,6 @@
 package com.lucassimao.tmdb.di
 
+import com.lucassimao.tmdb.di.movie.MovieSubComponent
 import dagger.Component
 import javax.inject.Singleton
 

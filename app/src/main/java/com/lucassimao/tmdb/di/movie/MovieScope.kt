@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di
+package com.lucassimao.tmdb.di.movie
 
 import javax.inject.Scope
 

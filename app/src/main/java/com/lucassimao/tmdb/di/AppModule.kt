@@ -1,6 +1,7 @@
 package com.lucassimao.tmdb.di
 
 import android.content.Context
+import com.lucassimao.tmdb.di.movie.MovieSubComponent
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

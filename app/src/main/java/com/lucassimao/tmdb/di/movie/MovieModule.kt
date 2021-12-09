@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.di
+package com.lucassimao.tmdb.di.movie
 
 import com.lucassimao.tmdb.domain.usecase.GetMoviesUseCase
 import com.lucassimao.tmdb.domain.usecase.UpdateMoviesUseCase
