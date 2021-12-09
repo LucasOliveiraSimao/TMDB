@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.api
 
 import com.lucassimao.tmdb.model.MovieList
 import retrofit2.Response
