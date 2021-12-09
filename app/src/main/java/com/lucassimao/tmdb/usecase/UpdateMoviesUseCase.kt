@@ -1,5 +1,6 @@
-package com.lucassimao.tmdb
+package com.lucassimao.tmdb.usecase
 
+import com.lucassimao.tmdb.MovieRepository
 import com.lucassimao.tmdb.data.model.Movie
 
 class UpdateMoviesUseCase(private val updateRepository: MovieRepository) {
