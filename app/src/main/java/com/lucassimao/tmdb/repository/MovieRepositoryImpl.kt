@@ -18,5 +18,18 @@ class MovieRepositoryImpl(
     override suspend fun updateMovies(): List<Movie> {
         TODO("Not yet implemented")
     }
-    
+
+    private suspend fun getMoviesFromAPI(): List<Movie> {
+        lateinit var movieList: List<Movie>
+        try {
+            val response = movieRemoteDatasource.getMovies()
+            val body = response.body()
+            if (body != null) {
+                movieList = body.movies!!
+            }
+        } catch (e: Exception) {
+
+        }
+        return movieList
+    }
 }
