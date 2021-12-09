@@ -48,4 +48,20 @@ class MovieRepositoryImpl(
         }
         return movieList
     }
+
+    private suspend fun getMoviesFromCache(): List<Movie> {
+        lateinit var movieList: List<Movie>
+        try {
+            movieList = movieCacheDatasource.getMoviesFromCache()
+        } catch (e: Exception) {
+
+        }
+        if (movieList.isNotEmpty()) {
+            return movieList
+        } else {
+            movieList = getMoviesFromDB()
+            movieCacheDatasource.saveMoviesToCache(movieList)
+        }
+        return movieList
+    }
 }
