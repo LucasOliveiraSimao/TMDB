@@ -1,4 +1,4 @@
-package com.lucassimao.tmdb.repository
+package com.lucassimao.tmdb.repository.datasource
 
 import com.lucassimao.tmdb.model.MovieList
 import retrofit2.Response

@@ -2,6 +2,7 @@ package com.lucassimao.tmdb.repository
 
 import com.lucassimao.tmdb.api.TMDBService
 import com.lucassimao.tmdb.model.MovieList
+import com.lucassimao.tmdb.repository.datasource.MovieRemoteDatasource
 import retrofit2.Response
 
 class MovieRemoteDatasourceImpl(
