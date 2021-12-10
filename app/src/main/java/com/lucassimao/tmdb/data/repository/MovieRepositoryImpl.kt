@@ -1,5 +1,6 @@
 package com.lucassimao.tmdb.data.repository
 
+import android.util.Log
 import com.lucassimao.tmdb.domain.MovieRepository
 import com.lucassimao.tmdb.data.model.Movie
 import com.lucassimao.tmdb.data.repository.datasource.MovieCacheDatasource
@@ -42,7 +43,7 @@ class MovieRepositoryImpl(
         try {
             movieList = movieDBDatasource.getMoviesFromDB()
         } catch (e: Exception) {
-
+            Log.i("MyTag", e.message.toString())
         }
         if (movieList.isNotEmpty()) {
             return movieList
